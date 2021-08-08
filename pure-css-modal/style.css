@@ -1,0 +1,53 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  background-color: #fff;
+  transition: transform 0.3s ease-in-out;
+  height: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  padding: 10px;
+}
+
+input:checked ~ .modal-overlay {
+  display: block;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+input:checked ~ .modal-overlay .modal {
+  transform: translate(-50%, -50%);
+}
+
+/* Other styles [optional] */
+.modal-body {
+  margin: 10px 0px;
+}
+
+.btn {
+  cursor: pointer;
+  background: rgba(98, 0, 255, 1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 4px 10px;
+  color: white;
+}
+
+.close-btn {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
