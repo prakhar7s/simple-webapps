@@ -1,0 +1,34 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eeeeee;
+  color: #212d31;
+}
+
+.main-heading {
+  position: relative;
+}
+
+.main-heading::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  bottom: -10px;
+  background-color: #ec1c24;
+}
+
+.form-btn {
+  border-radius: 20px;
+  min-width: 120px;
+}
+
+.contact-div {
+  min-height: 200px;
+}
