@@ -23,45 +23,46 @@
             <div class="row form-group">
               <div class="col">
                 <input
-                required
-                onkeypress="return /[a-z]/i.test(event.key)"
-                  type="text"
+                                type="text"
                   name='name'
                   class="form-control"
                   placeholder="Your Name*"
                 />
+                <span id='invalid-name' class="error-msg text-danger">Please enter only characters.</span>
               </div>
               <div class="col">
                 <input
-                required
 
                   type="email"
                   name='email'
                   class="form-control"
                   placeholder="Your Email*"
                 />
+
+                <span id='invalid-email' class="error-msg text-danger">Please valid a email address.</span>
+
               </div>
             </div>
             <div class="form-group">
               <input
-              required
-
                 type="text"
                 name='companyName'
                 class="form-control"
                 placeholder="Company Name*"
               />
+              <span id='invalid-cname' class="error-msg text-danger">Please enter Company Name.</span>
+
             </div>
             <div class="p-0 form-check">
               <textarea
-              required
 
                 class="m-0 form-control"
                 name='message'
                 placeholder="Your Message*"
                 rows="5"
-                minlength="20"
               ></textarea>
+              <span id='invalid-msg' class="error-msg text-danger">Please enter atleast 20 Characters.</span>
+
             </div>
 
             <div class="form-check my-4">

@@ -32,3 +32,8 @@ body {
 .contact-div {
   min-height: 200px;
 }
+
+.error-msg {
+  display: none;
+  font-size: 14px;
+}
